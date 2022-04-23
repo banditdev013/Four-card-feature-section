@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h1{
+    font-size: 29px;
+    color: var(--Very-Dark-Blue);
+}
+
+.section-title .title-main{
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+.section-title p{
+    margin: 20px 0;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+}
+
+.card-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px hsl(234 12% 34% / 14%);
+}
+
+.bd-cyan{
+    border-top: 4px solid var(--Cyan);
+}
+.bd-red{
+    border-top: 4px solid var(--Red);
+}
+.bd-orange{
+    border-top: 4px solid var(--Orange);
+}
+.bd-blue{
+    border-top: 4px solid var(--Blue);
+}
+
+.card h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--Very-Dark-Blue);
+}
+
+.card p{
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.card img{
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+img{
+    width: 50px;
+}
+
+.card-group{
+    margin: 0 28px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--Blue);
+}
+
+.attribution a {
+    color: var(--Cyan);
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        padding: 40px 0;
+    }
+    .card-zone{
+        flex-direction: column;
+        row-gap: 28px;
+    }
+}
